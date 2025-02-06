@@ -1,0 +1,177 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1e1e2f; /* Dark background */
+  color: #f0f0f0; /* Light text for contrast */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #00bcd4; /* Bright cyan color */
+  margin-bottom: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 188, 212, 0.7);
+}
+
+/* Event Cards */
+.event-card {
+  background-color: #292b3d; /* Dark card background */
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00bcd4; /* Bright cyan color */
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  color: #b0b0b0; /* Light gray text */
+}
+
+/* Location and Date Styling */
+.event-card .location,
+.event-card .date {
+  color: #ffffff; /* White text for location and date */
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+button.btn {
+  background-color: #ff4081; /* Bright pink color */
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 10px 25px;
+  transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: #f50057; /* Darker pink on hover */
+}
+
+.modal-content {
+  background-color: #292b3d; /* Dark modal background */
+  border-radius: 10px;
+  padding: 30px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  border-bottom: 1px solid #444;
+}
+
+.modal-header .btn-close {
+  opacity: 0.7;
+}
+
+.modal-header .btn-close:hover {
+  opacity: 1;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #ffffff; /* White label text */
+}
+
+.form-control {
+  border-radius: 25px;
+  border: 1px solid #444;
+  padding: 15px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.form-control:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+}
+
+.form-check-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Submit Button */
+.modal-body button[type="submit"] {
+  width: 100%;
+  background-color: #00bcd4; /* Bright cyan for submit */
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.modal-body button[type="submit"]:hover {
+  background-color: #0097a7; /* Darker cyan on hover */
+}
+
+.modal-body a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.modal-body a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Modal Styling */
+.modal-content {
+  background-color: #292b3d;
+}
+
+.modal-body {
+  color: #fff;
+}
+
+.modal-body input, .modal-body select, .modal-body textarea {
+  background-color: #333;
+  color: #fff;
+  border-radius: 15px;
+  padding: 12px;
+  border: 1px solid #444;
+}
+
+.modal-body button[type="submit"]:hover {
+  background-color: #00796b;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+}
+  
